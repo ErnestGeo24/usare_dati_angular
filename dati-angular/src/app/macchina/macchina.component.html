@@ -1,1 +1,14 @@
-<p>macchina works!</p>
+<!-- macchina.component.html -->
+<div class="macchina">
+    <h3>{{ nome }}</h3>
+    <p>Tipo: {{ tipo }}</p>
+    <p>Anno di produzione: {{ annoProduzione }}</p>
+  
+    <div *ngIf="pezzi && pezzi.length > 0">
+      <h4>Pezzi della macchina:</h4>
+      <ul>
+        <li *ngFor="let pezzo of pezzi">{{ pezzo }}</li>
+      </ul>
+    </div>
+  </div>
+  

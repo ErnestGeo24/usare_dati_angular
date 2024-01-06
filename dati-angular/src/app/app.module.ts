@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { ContainerComponent } from './container/container.component';
 import { MacchinaComponent } from './macchina/macchina.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MacchinaComponent } from './macchina/macchina.component';
     MacchinaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
